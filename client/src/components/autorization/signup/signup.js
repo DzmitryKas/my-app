@@ -17,7 +17,7 @@ const Signup = (props) => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    props.userPostFetch({userName, password, avatar, bio})
+    props.userPostFetch({userName, password, avatar})
   }
 
   return (

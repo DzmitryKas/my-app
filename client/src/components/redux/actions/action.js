@@ -2,9 +2,9 @@ import axios from 'axios';
 
 const userPostFetch = user => {
   return dispatch => {
-    return axios.post("http://localhost:3000/api/v1/users", {user})
-          .then(resp => resp.json())
+    return axios.post("http://localhost:5000/api/user", {user})
           .then(data => {
+            console.log(data.data)
             if (data.message) {
 
             } else {
