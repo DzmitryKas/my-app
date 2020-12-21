@@ -1,5 +1,7 @@
-const noteRoutes = require('./note_route');
+const authRoutes = require('./auth.routes');
+const fileRoutes = require('./file.routes');
 
-module.exports = function (app, db) {
-  noteRoutes(app, db);
+module.exports = function (app) {
+  authRoutes(app);
+  fileRoutes(app);
 }

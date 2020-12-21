@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Header from '../../header/header'
+import NavBar from '../../navBar/NavBar';
 
 const Main = () => {
   return (
     <div>
-      <Header />
+      
     </div>
   )
 }
